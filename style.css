@@ -1,7 +1,86 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
+body{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.container{
+    width:  550px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin: 130px 0;
+
+}
+img{
+    width: 280px;
+    height: 430px;
+}
+
+.product-image{
+    width: 100%;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    padding: 30px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.price1{
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+}
+.price2{
+    font-family: 'Montserrat';
+}
+
+button{
+    font-family: 'Montserrat';
+    padding: 1rem 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(158, 36%, 27%);
+}
+
+button:active{
+    background-color: hsl(158, 36%, 20%);
+}
+
+.product, .product-description{
+    font-family: 'Montserrat';
+}
+
+.product-name{
+    font-family: 'Fraunces';
+}
+
+
+
 
 .attribution { 
     font-size: 11px; 
@@ -10,132 +89,26 @@
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-body{
-    background-color: hsl(30, 38%, 92%);
+
+
+@media(max-width: 768px){
+
+    .container{
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    img{
+        width: 100%;
+        height: 230px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .product-info{
+        gap: 1.4rem;
+    }
 }
-.container{
-    width: 530px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid white;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-top: 200px;
-    margin-bottom: 200px;
-}
-
-.container img{
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    flex-grow: 1;
-
-}
-
-.perfume_info{
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    width: 440px;
-    padding: 20px;
-    
-}
-
-.perfume{
-    font-family: 'Montserrat';
-    margin-bottom: 15px;
-    font-size: 14px;
-}
-
-.french_writing{
-    font-family: 'Fraunces';
-    line-height: 32px;
-    margin-bottom: 25px;
-}
-
-.perfume_description{
-    font-family: 'Montserrat';
-    margin-bottom: 20px;
-    font-size: 14px;
-}
-
-.price{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.price1{
-    font-family: 'Fraunces';
-    margin-bottom: 20px;
-    color: hsl(158, 36%, 37%);
-}
-
-.price2{
-    font-family: 'Montserrat';
-    font-size: 14px;
-    margin-left: 15px;
-    margin-bottom: 20px;
-    
-}
-
-.buy_button button{
-    font-family: 'Montserrat';
-    padding: 14px 14px;
-    width: 100%;
-    border: none;
-    border-radius: 8px;
-    background-color: hsl(158, 36%, 37%);
-    color: white;
-    cursor: pointer;
-}
-.buy_button button:hover{
-    background-color:  hsl(158, 39%, 22%);
-}
-
-.buy_button i{
-    margin-right: 5px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
